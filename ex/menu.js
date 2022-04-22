@@ -15,12 +15,6 @@ function on_category(){
   }
 }
 
-function ctg1_1(){
-  var value = document.getElementById("id_pop_1_1");
-
-  if(value.style.display != 'block'){
-    value.style.display = 'block';
-  }else{
-    value.style.display = 'none';
-  }
+function ctg(){
 }
+

@@ -1,0 +1,128 @@
+.ps-font{
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  text-shadow: 4px 4px #111;
+}
+
+@font-face {
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.date {
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+  font-size: 16px;
+  color: #F0AD4E;
+}
+
+#name{
+  position: fixed;
+  left: 50px; top: -20px; right: 0;
+
+  font-family: "Press Start 2P";
+  font-weight: bold;
+  font-size: 32px;
+
+  color:#9D9D9D;
+}
+
+#category_note{
+  position: fixed;
+  left: 220px; top: 0px; right: 0;
+  width: 10px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  color:#9D9D9D;
+}
+
+#category_note:hover{
+  font-weight: bold;
+}
+
+#write_up{
+  position: fixed;
+  left: 340px; top: 0px; right: 0;
+  width: 90px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  color:#9D9D9D;
+}
+
+#write_up:hover{
+  font-weight: bold;
+}
+
+#popup:hover{
+  color:red;
+  cursor:pointer;
+}
+
+.context {
+  width: 800px;
+
+  position: absolute;
+  float: left;
+  left: 50%;
+  margin-top: 100px;
+
+  color:#CCCCCC;
+
+  font-family: Roboto, "맑은 고딕";
+  font-size: 18px;
+}
+
+.link_list {
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.link_list2 {
+  font-size: 16px;
+  line-height: 1.4
+}
+
+.link_list3 {
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #F0AD4E;
+  list-style-type: Square;
+}
+
+.link_list4 {
+  color:white;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+
+a:link { color: #F0AD4E; text-decoration-line: none;}
+a:visited { color: #F0AD4E; }
+a:hover { color: #F0AD4E; }
+a:active { color: #F0AD4E; }
+
+.lhref:link {
+  color: white;
+}
+.lhref:hover {
+  color: red;
+  cursor:pointer;
+}
+.lhref:active {
+  color:white;
+}
+.lhref:visited {
+  color:white;
+}

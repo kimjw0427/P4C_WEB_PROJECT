@@ -1,0 +1,72 @@
+.top_bar{
+  position: fixed;
+  left: 0; top: 0; right: 0;
+  height: 55px;
+
+  border-style: solid;
+  border-color: #666;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 2px;
+  background-color: #222222;
+}
+.top_bar2{
+  position: fixed;
+  left: 0; top: 0; right: 0;
+  height: 58px;
+
+  border-style: solid;
+  border-color: #666;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 2px;
+}
+
+
+.left_bar {
+  position: fixed;
+  left: 0; top: 58px; bottom: 0;
+  width: 300px;
+
+  border-style: solid;
+  border-color: #666;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 2px;
+  border-bottom-width: 0px;
+  background-color: #222222;
+}
+.left_bar2 {
+  position: fixed;
+  left: 0; top: 58px; bottom: 0;
+  width: 303px;
+
+  border-style: solid;
+  border-color: #666;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 2px;
+  border-bottom-width: 0px;
+}
+
+.context_bar {
+  position: relative;
+  right: 0;left: 0; top: 10px; bottom: 0;
+  width: 200px;
+  height: 8px;
+  background-color: #FFC000;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #222222;
+  border-radius: 5px;
+}

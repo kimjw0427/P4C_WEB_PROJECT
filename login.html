@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+    <link rel="stylesheet" href="ex/bg.css">
+    <link rel="stylesheet" href="ex/text.css">
+    <meta charset="utf-8">
+    <title>NAME</title>
+    <script src="ex/menu.js"></script>
+  </head>
+  <body bgcolor="#222222">
+
+    <div class="context" id="context_move" style="margin-left: -400px;">
+
+      <a class="login_title">LOGIN</a>
+      <div class="context_bar"></div>
+
+      <br>
+
+      <div class="context_login">
+        <div class="context_login2">
+          <form action="URL.php" method="post">
+            <div class="grid_login">
+              <a class="input_context">ID </a>
+              <input class="input_box" type="text" name="id">
+              <a class="input_context">PASSWORD </a>
+              <input class="input_box" type="text" name="ps">
+            </div>
+          <br>
+          <input type="submit" id="btn_login" value="Submit">
+        </div>
+      </div>
+</form>
+  </div>
+
+    <div class="top_bar2"></div>
+    <div class="top_bar"></div>
+
+    <p id="name" class="ps-font">name</p>
+    <p id="category_note" onclick="on_category();">category</p>
+    <p id="write_up">Write</p>
+
+    <div class="left_bar2" id="on_off_category2" style="display: none;"></div>
+    <div class="left_bar" id="on_off_category" style="display: none; overflow:auto;">"
+      <ol class="link_list">
+        <p></p>
+
+        <p class="ps-font link_list2">Notice</p>
+        <ul class="link_list3">
+          <li id="popup" onclick="ctg1_1();">Category 1</li>
+          <li id="popup" onclick="ctg2_2();">Category 2</li>
+          <li id="popup" onclick="ctg3_3();">Category 3</li>
+        </ul>
+
+        <br>
+
+        <p class="ps-font link_list2">Board 2</p>
+        <ul class="link_list3">
+          <li id="popup" onclick="ctg2_1();">Category 1</li>
+          <li id="popup" onclick="ctg2_2();">Category 2</li>
+          <li id="popup" onclick="ctg2_3();">Category 3</li>
+        </ul>
+
+        <br>
+
+
+        <p class="ps-font link_list2">Board 3</p>
+        <ul class="link_list3">
+          <li id="popup" onclick="ctg3_1();">Category 1</li>
+          <li id="popup" onclick="ctg3_2();">Category 2</li>
+          <li id="popup" onclick="ctg3_3();">Category 3</li>
+        </ul>
+
+      </ol>
+    </div>
+
+
+  </body>
+</html>

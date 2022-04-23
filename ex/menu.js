@@ -17,4 +17,3 @@ function on_category(){
 
 function ctg(){
 }
-

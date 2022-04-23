@@ -51,12 +51,65 @@
   border-bottom-width: 0px;
 }
 
+.context {
+  width: 800px;
+
+  position: absolute;
+  left: 50%;
+  margin-top: 100px;
+
+  font-family: Roboto, "맑은 고딕";
+  font-size: 18px;
+  color: #CCCCCC;
+}
+
 .context_bar {
   position: relative;
   right: 0;left: 0; top: 10px; bottom: 0;
   width: 200px;
   height: 8px;
   background-color: #FFC000;
+}
+
+.context_login {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+}
+
+.context_login2 {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  top: 25%;
+}
+
+.grid_login {
+  display: grid;
+  grid-template-columns: 150px 200px;
+  grid-template-rows: 32px 32px;
+}
+
+#btn_login {
+  border: 2px solid #FFC000;
+  background-color: #222222;
+  color: #FFC000;
+  font-size: 20px;
+  font-family: 'LAB디지털';
+  padding: 3px 150px;
+}
+
+#btn_login:hover {
+  border: 1px solid red;
+  background-color: #222222;
+  color: red;
+}
+
+.input_box {
+  width: 200px;
+  height: 20px;
 }
 
 ::-webkit-scrollbar {

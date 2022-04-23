@@ -11,6 +11,16 @@
   font-style: normal;
 }
 
+.login_title {
+  font-size: 25px;
+  font-family: 'Press Start 2P';
+}
+
+.input_context {
+  font-size: 25px;
+  font-family: 'LAB디지털';
+}
+
 .title {
   font-size: 40px;
 }
@@ -66,20 +76,6 @@
 #popup:hover{
   color:red;
   cursor:pointer;
-}
-
-.context {
-  width: 800px;
-
-  position: absolute;
-  float: left;
-  left: 50%;
-  margin-top: 100px;
-
-  color:#CCCCCC;
-
-  font-family: Roboto, "맑은 고딕";
-  font-size: 18px;
 }
 
 .link_list {

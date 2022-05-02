@@ -21,6 +21,12 @@
   font-family: 'LAB디지털';
 }
 
+.login_msg {
+  font-size: 20px;
+  font-family: 'LAB디지털';
+  color: #ff0000;
+}
+
 .title {
   font-size: 40px;
 }
@@ -76,6 +82,81 @@
 #popup:hover{
   color:red;
   cursor:pointer;
+}
+
+
+#login{
+  position: fixed;
+  left: 1090px; top: 0px; right: 0;
+  width: 90px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  color:#9D9D9D;
+}
+
+#login:hover{
+  font-weight: bold;
+}
+
+#l_g_and{
+  position: fixed;
+  left: 1140px; top: 0px; right: 0;
+  width: 90px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  color:#9D9D9D;
+}
+
+#register{
+  position: fixed;
+  left: 1155px; top: 0px; right: 0;
+  width: 90px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  color:#9D9D9D;
+}
+
+#logout{
+  position: fixed;
+  left: 1090px; top: 0px; right: 0;
+  width: 90px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  color:#9D9D9D;
+}
+
+#logout:hover{
+  font-weight: bold;
+}
+
+#l_g_and_2{
+  position: fixed;
+  left: 1150px; top: 0px; right: 0;
+  width: 90px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  color:#9D9D9D;
+}
+
+#username{
+  position: fixed;
+  left: 1165px; top: 0px; right: 0;
+  width: 90px;
+
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  color:#9D9D9D;
 }
 
 .link_list {

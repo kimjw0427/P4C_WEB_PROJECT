@@ -14,14 +14,26 @@
 
     $data = $res->fetch_assoc();
     if(isset($data['id'])){
-      $login_msg = 'Success';
-      $_SESSION['user'] = $data['id'];
+      $query2 = $db->prepare("SELECT * FROM verify WHERE username=?;");
+      $query2->bind_param("s",$username);
+      $query2->execute();
+      $res2 = $query2->get_result();
+      $query2->close();
+      $data2 = $res2->fetch_assoc();
+
+      if($data2['isverify']==0){
+        $login_msg = 'Login Failed : The email is not verified';
+      } else {
+        $login_msg = 'Success <script> document.location.href="/index.php";</script>';
+        $_SESSION['user'] = $data['id'];
+      }
     } else{
       $login_msg = 'Login Failed : Unknown account';
     }
   }
 
   if(isset($_SESSION['user'])){
+    $id = $_SESSION['user'];
     $query = $db->prepare("SELECT username FROM users WHERE id=?;");
     $query->bind_param("i",$id);
     $query->execute();
@@ -29,9 +41,7 @@
     $query->close();
 
     $data = $res->fetch_assoc();
-    $username = $data['username'];
-
-    $username = 'admin';
+    $session_user = $data['username'];
   }
 
 ?>
@@ -58,7 +68,7 @@
         <div class="context_login2">
           <form action="login.php" method="post">
             <div class="grid_login">
-              <a class="input_context">ID </a>
+            <a class="input_context">ID </a>
               <input class="input_box" type="text" name="username">
               <a class="input_context">PASSWORD </a>
               <input class="input_box" type="password" name="password">
@@ -69,73 +79,15 @@
             <?php
               if(isset($login_msg)){
                 echo($login_msg);
-                echo($username);
               }
             ?>
             </p>
+          </form>
         </div>
       </div>
-</form>
-  </div>
 
-    <div class="top_bar2"></div>
-    <div class="top_bar"></div>
-
-    <p id="name" class="ps-font">name</p>
-    <p id="category_note" onclick="on_category();">category</p>
-    <p id="write_up">Write</p>
-    
     <?php
-      if(isset($username)){
-        $menu_html='
-        <p id="logout" onclick="javascript:location.href=\'/Logout.php\'" >Logout</p>
-        <p id="l_g_and_2">/</p>
-        <p id="username">'.$username.'</p>
-        ';
-      } else{
-        $menu_html='
-        <p id="login" onclick="javascript:location.href=\'/login.php\'" >Login</p>
-        <p id="l_g_and">/</p>
-        <p id="register">Register</p>
-        ';
-      }
-      echo($menu_html);
+        include 'menu.php';
     ?>
-
-    <div class="left_bar2" id="on_off_category2" style="display: none;"></div>
-    <div class="left_bar" id="on_off_category" style="display: none; overflow:auto;">"
-      <ol class="link_list">
-        <p></p>
-
-        <p class="ps-font link_list2">Notice</p>
-        <ul class="link_list3">
-          <li id="popup" onclick="ctg1_1();">Category 1</li>
-          <li id="popup" onclick="ctg2_2();">Category 2</li>
-          <li id="popup" onclick="ctg3_3();">Category 3</li>
-        </ul>
-
-        <br>
-
-        <p class="ps-font link_list2">Board 2</p>
-        <ul class="link_list3">
-          <li id="popup" onclick="ctg2_1();">Category 1</li>
-          <li id="popup" onclick="ctg2_2();">Category 2</li>
-          <li id="popup" onclick="ctg2_3();">Category 3</li>
-        </ul>
-
-        <br>
-
-
-        <p class="ps-font link_list2">Board 3</p>
-        <ul class="link_list3">
-          <li id="popup" onclick="ctg3_1();">Category 1</li>
-          <li id="popup" onclick="ctg3_2();">Category 2</li>
-          <li id="popup" onclick="ctg3_3();">Category 3</li>
-        </ul>
-
-      </ol>
-    </div>
-
-
   </body>
 </html>

@@ -71,6 +71,121 @@
   background-color: #FFC000;
 }
 
+
+.context_bar2 {
+  position: relative;
+  right: 0;left: 0; top: 10px; bottom: 0;
+  width: 800px;
+  height: 2px;
+  background-color: #666;
+}
+
+.search_box {
+  position: relative;
+  right: 0;left: 450px; top: -2px; bottom: 0px;
+  width: 400px;
+}
+
+.board_box {
+  position: relative;
+  right: 0;left: 25px; top: 10px; bottom: 0;
+  width: 750px;
+  height: 50px;
+
+  border-style: solid;
+  border-color: #666;
+  border-top-width: 4px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  background-color: #222222;
+
+  display: grid;
+  grid-template-columns: 400px 100px 125px 125px;
+  grid-template-rows: 50px;
+}
+
+.board_list_title {
+  width: 400px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  
+  position: relative;
+  right: 0;left: 5px; top: 13px; bottom: 0;
+
+
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.board_list_other {
+  width: 125px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  
+  position: relative;
+  right: 0;left: 5px; top: 13px; bottom: 0;
+
+
+  font-size: 18px;
+  color: #FFC000;
+
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+}
+
+.comment_box {
+  position: relative;
+  right: 0;left: 25px; top: 10px; bottom: 0;
+  width: 750px;
+  height: 80px;
+
+  border-style: solid;
+  border-color: #666;
+  border-top-width: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  background-color: #222222;
+
+  display: grid;
+  grid-template-columns: 550px 80px 120px;
+  grid-template-rows: 50px;
+}
+
+.comment_list_title {
+  width: 550px;
+
+  position: relative;
+  right: 0;left: 5px; top: 13px; bottom: 0;
+
+
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.comment_list_other {
+  width: 125px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  
+  position: relative;
+  right: 0;left: 5px; top: 13px; bottom: 0;
+
+
+  font-size: 18px;
+  color: #FFC000;
+
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+}
+
 .context_login {
   width: 400px;
   height: 200px;
@@ -92,6 +207,64 @@
   grid-template-rows: 32px 32px;
 }
 
+.grid_register {
+  display: grid;
+  grid-template-columns: 150px 200px;
+  grid-template-rows: 32px 32px 32px 32px;
+}
+
+.grid_write {
+  display: grid;
+  grid-template-columns: 100px 150px;
+  grid-template-rows: 32px 32px 18px 18px 18px 18px 368px;
+}
+
+.grid_content {
+  display: grid;
+  grid-template-columns: 10px 150px;
+  grid-template-rows: 1px 1px;
+}
+
+.input_title {
+  width: 650px;
+  height: 20px;
+}
+
+.input_content {
+  width: 730px;
+  height: 400px;
+  text-align: top;
+}
+
+
+.grid_comment {
+
+  display: grid;
+  grid-template-columns: 0px 350px 400px;
+  grid-template-rows: 32px;
+}
+
+.input_comment {
+  width: 320px;
+  height: 54px;
+}
+
+#btn_comment {
+  border: 2px solid #FFC000;
+  background-color: #222222;
+  color: #FFC000;
+  font-size: 16px;
+  font-family: 'LAB디지털';
+  width:80px; height:60px;
+}
+
+#btn_comment:hover {
+  border: 1px solid red;
+  background-color: #222222;
+  color: red;
+}
+
+
 #btn_login {
   border: 2px solid #FFC000;
   background-color: #222222;
@@ -107,8 +280,43 @@
   color: red;
 }
 
+#btn_search {
+  border: 2px solid #FFC000;
+  background-color: #222222;
+  color: #FFC000;
+  font-size: 14px;
+  font-family: 'LAB디지털';
+  padding: 3px 20px;
+}
+
+#btn_search:hover {
+  border: 1px solid red;
+  background-color: #222222;
+  color: red;
+}
+
+#btn_write {
+  border: 2px solid #FFC000;
+  background-color: #222222;
+  color: #FFC000;
+  font-size: 20px;
+  font-family: 'LAB디지털';
+  padding: 3px 350px;
+}
+
+#btn_write:hover {
+  border: 1px solid red;
+  background-color: #222222;
+  color: red;
+}
+
 .input_box {
   width: 200px;
+  height: 20px;
+}
+
+.search_input_box {
+  width: 100px;
   height: 20px;
 }
 

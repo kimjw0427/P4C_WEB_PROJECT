@@ -38,6 +38,13 @@
   color: #F0AD4E;
 }
 
+.board_username {
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+  font-size: 16px;
+  float: right;
+}
+
 #name{
   position: fixed;
   left: 50px; top: -20px; right: 0;
@@ -122,6 +129,10 @@
   color:#9D9D9D;
 }
 
+#register:hover{
+  font-weight: bold;
+}
+
 #logout{
   position: fixed;
   left: 1090px; top: 0px; right: 0;
@@ -182,6 +193,25 @@
   color:white;
   font-family: Roboto;
   font-size: 16px;
+}
+
+.file_download {
+  font-size: 14px;
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+  color: #F0AD4E;
+}
+
+.board_recm {
+  font-size: 16px;
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+  color: #F0AD4E;
+}
+
+.board_recm:hover {
+  color: red;
+  cursor:pointer;
 }
 
 

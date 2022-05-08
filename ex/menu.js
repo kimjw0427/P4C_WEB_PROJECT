@@ -14,6 +14,3 @@ function on_category(){
     context_.style.marginLeft = '-400px';
   }
 }
-
-function ctg(){
-}

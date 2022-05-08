@@ -30,7 +30,7 @@
 
     <div class="context" id="context_move" style="margin-left: -400px;">
 
-      <a class="title">안녕하세요!</a>
+      <a class="title">한글 가독성 확인 hangul!</a>
       <a class='date'>2022-04-22</a>
       <div class="context_bar"></div>
 
